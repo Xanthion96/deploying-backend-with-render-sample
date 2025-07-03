@@ -4,7 +4,7 @@ const { Pool } = require('pg');
 const fetch = require('node-fetch');
 
 const PORT = process.env.PORT || 3000;
-const DATABASE_URL = process.env.DATABASE_URL;
+const DATABASE_URL = process.env.postgresql://activities_user:c344FviaaIu7l3J3L3acHU56pytwh4Pn@dpg-d1ja0b6mcj7s73ae9jug-a/activity_database_osac;
 
 // Database connection
 const pool = new Pool({
