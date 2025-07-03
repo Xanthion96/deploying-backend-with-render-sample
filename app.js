@@ -31,7 +31,7 @@ async function getRandomActivity() {
 app.get('/insert_activity', async (req, res) => {
   try {
     const client = await pool.connect();
-    const activityName = await getRandomActivity();
+    const activityName = 'Pot some plants and put them around your house';
 
     if (activityName) {
       await client.query('INSERT INTO my_activities (activity) VALUES ($1)', [activityName]);
